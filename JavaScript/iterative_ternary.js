@@ -1,3 +1,5 @@
+// Iterative version that uses calculations in ternary operator expressions. Probably not as readable as separate if statements, but very compact.
+
 const binarySearch = (numArray, target) => {
     let pivot, left = 0, right = numArray.length-1;
     while (right >= left) {
