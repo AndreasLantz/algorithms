@@ -1,10 +1,10 @@
 const binarySearch = (numArray, target) => {
-    let pivot, left = 0, right = nums.length-1;
+    let middle, left = 0, right = numArray.length-1;
     while (right >= left) {
-        pivot = Math.floor(left + ((right - left) / 2));
-        if (nums[pivot] == target) return pivot;
-        if (nums[pivot] > target) right = pivot - 1
-        if (nums[pivot] < target) left = pivot + 1;
+        middle = Math.floor(left + ((right - left) / 2));
+        if (numArray[middle] == target) return middle;
+        if (numArray[middle] > target) right = middle - 1
+        if (numArray[middle] < target) left = middle + 1;
     }
     return -1;
 };
