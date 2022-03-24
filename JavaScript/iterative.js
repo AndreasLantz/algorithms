@@ -1,3 +1,5 @@
+// Probably my preferred style of the iterative versions. Readable but compact.
+
 const binarySearch = (numArray, target) => {
     let middle, left = 0, right = numArray.length-1;
     while (right >= left) {
