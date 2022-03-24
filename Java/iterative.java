@@ -8,14 +8,14 @@ public class binary{
             if (numArray[middle] > target) right = middle - 1;
             if (numArray[middle] < target) left = middle + 1;
         }
-    return -1;
+        return -1;
     }
 
     public static void main(String args[]) {
         int numArray[] = {1,3,4,7,8,12,14,18};
         int target = 8;
         int result = searchBinary(numArray, target);
-        
+
         System.out.println(result == -1 ? -1 : result);
     }
 }
