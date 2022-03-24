@@ -1,3 +1,5 @@
+// A slightly older style just for fun.
+
 const binarySearch = (numArray, target) => {
     let middle, left = 0, right = numArray.length-1;
     while (right >= left) {
